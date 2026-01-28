@@ -1,0 +1,36 @@
+{
+  "name": "ait-connector",
+  "version": "2.0.0",
+  "description": "Sistema de conexión/desconexión dinámica de módulos para AIT-CORE ERP",
+  "author": "AI Innovation Technologies (AIT)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ait-technologies/ait-connector.git"
+  },
+  "keywords": [
+    "erp",
+    "modules",
+    "dynamic-loading",
+    "plugin-system",
+    "module-connector",
+    "ait-core",
+    "enterprise"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "workspaces": [
+    "libs/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
